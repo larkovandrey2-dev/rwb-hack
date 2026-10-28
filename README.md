@@ -1,4 +1,4 @@
-# Capibara / Olist
+# RWB TECH-HACK/EMAE
 
 Нужны Docker, Python 3.13 и Node.js 20+.
 
