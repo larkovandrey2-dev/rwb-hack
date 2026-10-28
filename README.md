@@ -29,3 +29,5 @@ npm run dev
 Открыть http://localhost:5173. Используется настоящий API; доставка пока заглушка, фильтры в HTTP-режиме выключены.
 
 Данные: CSV → raw → core → mart → API. Пять ответов из корня: `bash solution/bin/export_answers.sh`. Оборот — товары delivered без доставки; чек — заказ с доставкой; повторность — все статусы. Рейтинг однопродавцовых заказов не доказывает ответственность продавца.
+
+Данные: [Olist](https://github.com/olist/work-at-olist-data), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Загрузчик: [организатор](https://github.com/daniilivanovp-droid/hackathon-students), `3da32d149bfa14dca3fdb0c5863d0771c38efbfc`.
