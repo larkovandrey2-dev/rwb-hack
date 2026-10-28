@@ -1,0 +1,10 @@
+/* Таблица во всю ширину карточки, как в макете */
+.bleed {
+  margin: 0 calc(-1 * var(--gap)) 16px;
+}
+
+.state {
+  margin-left: 6px;
+  color: var(--c-faint);
+  font-size: var(--fs-xs);
+}

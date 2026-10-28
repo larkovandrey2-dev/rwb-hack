@@ -1,0 +1,31 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  padding: 4px var(--gap) 28px;
+  border-left: 1px solid var(--c-border);
+}
+
+.tile:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.label {
+  color: var(--c-text-2);
+}
+
+.value {
+  font-size: var(--fs-kpi);
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skeleton {
+  width: 70%;
+  height: 38px;
+  background: var(--c-track);
+}

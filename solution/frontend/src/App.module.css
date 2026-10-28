@@ -1,0 +1,52 @@
+.shell {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--page-pad) 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--c-border-strong);
+}
+
+.tabs {
+  display: flex;
+  gap: 28px;
+}
+
+.tab,
+.tabActive {
+  margin-bottom: -1px;
+  padding: 22px 0 16px;
+  border-bottom: 2px solid transparent;
+  color: var(--c-muted);
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.tabActive {
+  border-bottom-color: var(--c-text);
+  color: var(--c-text);
+  font-weight: 700;
+}
+
+.csv {
+  padding: 0 0 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.csv:disabled {
+  color: var(--c-faint);
+  cursor: default;
+}
+
+.footer {
+  margin-top: 12px;
+  color: var(--c-muted);
+  font-size: var(--fs-sm);
+}

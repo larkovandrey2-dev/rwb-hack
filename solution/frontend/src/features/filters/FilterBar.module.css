@@ -1,0 +1,96 @@
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  padding: 12px 16px;
+  border: 1px solid var(--c-border);
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.periodLabel {
+  color: var(--c-muted);
+  font-size: var(--fs-sm);
+}
+
+.dash {
+  color: var(--c-faint);
+}
+
+.divider {
+  align-self: stretch;
+  width: 1px;
+  background: var(--c-border);
+}
+
+.select {
+  appearance: none;
+  padding: 6px 22px 6px 4px;
+  border: 1px solid transparent;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 4 4-4' fill='none' stroke='%23888'/%3E%3C/svg%3E")
+    no-repeat right 4px center;
+  font-size: var(--fs-lg);
+  cursor: pointer;
+}
+
+.select:hover,
+.select:focus-visible {
+  border-color: var(--c-border);
+  outline: none;
+}
+
+.month {
+  width: 120px;
+}
+
+.state {
+  width: 210px;
+}
+
+.category {
+  width: 250px;
+}
+
+.apply {
+  padding: 7px 14px;
+  border: 1px solid var(--c-border-strong);
+  background: var(--c-surface);
+  cursor: pointer;
+}
+
+.apply:hover {
+  background: #e7e7e7;
+}
+
+.reset,
+.link {
+  padding: 7px 4px;
+  border: none;
+  background: none;
+  color: var(--c-text-2);
+  cursor: pointer;
+}
+
+.link {
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+.status {
+  margin-left: auto;
+  color: var(--c-muted);
+  font-size: var(--fs-sm);
+  white-space: nowrap;
+}
+
+.bar :disabled {
+  color: var(--c-faint);
+  cursor: default;
+}
