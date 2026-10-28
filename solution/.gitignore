@@ -1,0 +1,9 @@
+data/*.csv
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.DS_Store
+results/*
+!results/.gitkeep
