@@ -1,0 +1,17 @@
+{
+  "total": 13221498.11,
+  "items": [
+    { "code": "beleza_saude", "label": "Красота и здоровье", "revenue": 1233131.72, "share": 0.0933 },
+    { "code": "relogios_presentes", "label": "Часы и подарки", "revenue": 1166176.98, "share": 0.0882 },
+    { "code": "cama_mesa_banho", "label": "Спальня и ванная", "revenue": 1023434.76, "share": 0.0774 },
+    { "code": "esporte_lazer", "label": "Спорт и отдых", "revenue": 954852.55, "share": 0.0722 },
+    { "code": "informatica_acessorios", "label": "Компьютерные аксессуары", "revenue": 888724.61, "share": 0.0672 },
+    { "code": "moveis_decoracao", "label": "Мебель и декор", "revenue": 711927.69, "share": 0.0538 },
+    { "code": "utilidades_domesticas", "label": "Товары для дома", "revenue": 615628.69, "share": 0.0466 },
+    { "code": "cool_stuff", "label": "Интересные вещи", "revenue": 610204.10, "share": 0.0462 },
+    { "code": "automotivo", "label": "Автотовары", "revenue": 578966.65, "share": 0.0438 },
+    { "code": "brinquedos", "label": "Игрушки", "revenue": 471286.48, "share": 0.0356 }
+  ],
+  "other": { "count": 63, "revenue": 4796437.25, "share": 0.3628 },
+  "uncategorized": { "revenue": 170726.63, "share": 0.0129 }
+}

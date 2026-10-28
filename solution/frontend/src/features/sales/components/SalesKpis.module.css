@@ -1,0 +1,21 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding-top: 28px;
+  border-bottom: 1px solid var(--c-border-strong);
+}
+
+.error {
+  grid-column: 1 / -1;
+  margin-bottom: 12px;
+  border: none;
+  background: none;
+  color: var(--c-muted);
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

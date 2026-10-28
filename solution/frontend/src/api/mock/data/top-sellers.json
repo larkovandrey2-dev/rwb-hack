@@ -1,0 +1,12 @@
+[
+  { "rank": 1, "seller_id": "4869f7a5dfa277a7dca6462dcf3b52b2", "city": "guariba", "state": "SP", "orders": 1124, "units": 1148, "revenue": 226987.93, "handover_breach_share": 0.054 },
+  { "rank": 2, "seller_id": "53243585a1d6dc2643021fd1853d8905", "city": "lauro de freitas", "state": "BA", "orders": 348, "units": 400, "revenue": 217940.44, "handover_breach_share": 0.063 },
+  { "rank": 3, "seller_id": "4a3ca9315b744ce9f8e9374361493884", "city": "ibitinga", "state": "SP", "orders": 1772, "units": 1949, "revenue": 196882.12, "handover_breach_share": 0.085 },
+  { "rank": 4, "seller_id": "fa1c13f2614d7b5c4749cbc52fecda94", "city": "sumare", "state": "SP", "orders": 578, "units": 579, "revenue": 190917.14, "handover_breach_share": 0.079 },
+  { "rank": 5, "seller_id": "7c67e1448b00f6e969d365cea6b010ab", "city": "itaquaquecetuba", "state": "SP", "orders": 973, "units": 1355, "revenue": 186570.05, "handover_breach_share": 0.307 },
+  { "rank": 6, "seller_id": "7e93a43ef30c4f03f38b393420bc753a", "city": "barueri", "state": "SP", "orders": 319, "units": 322, "revenue": 165981.49, "handover_breach_share": 0.081 },
+  { "rank": 7, "seller_id": "da8622b14eb17ae2831f4ac5b9dab84a", "city": "piracicaba", "state": "SP", "orders": 1311, "units": 1548, "revenue": 159816.87, "handover_breach_share": 0.050 },
+  { "rank": 8, "seller_id": "7a67c85e85bb2ce8582c35f2203ad736", "city": "sao paulo", "state": "SP", "orders": 1145, "units": 1155, "revenue": 139658.69, "handover_breach_share": 0.028 },
+  { "rank": 9, "seller_id": "1025f0e2d44d7041d6cf58b6550e0bfa", "city": "sao paulo", "state": "SP", "orders": 910, "units": 1420, "revenue": 138208.56, "handover_breach_share": 0.172 },
+  { "rank": 10, "seller_id": "955fee9216a65b617aa5c0531780ce60", "city": "sao paulo", "state": "SP", "orders": 1261, "units": 1472, "revenue": 131836.71, "handover_breach_share": 0.007 }
+]
