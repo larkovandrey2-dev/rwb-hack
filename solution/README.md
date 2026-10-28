@@ -21,7 +21,7 @@ bash api/run.sh
 
 DBeaver: localhost:**5433**, marketplace, учебные user/password `hack/hack`. Соседний проект на 5432 не используется. API: http://127.0.0.1:8004/docs. API-пароль генерируется в локальный `api/.env`, в Git не попадает. Пользователь API имеет SELECT только на разрешённых mart, без доступа к raw и записи в core. Не копируйте placeholder из `.env.example` как рабочий пароль.
 
-GET `/api/overview`, `/api/sales/monthly`, `/api/sellers?limit=10&offset=0`, `/api/categories`, `/api/customers/repeat`. Ответ `{"data": [...], "meta": {...}}`. Счётчики — числа; суммы, средние, рейтинги и проценты — точные десятичные строки; отсутствующее — null; даты — ISO. Проценты уже в шкале 0–100. CORS: localhost/127.0.0.1:5173 и :3000; иной origin через API_CORS_ORIGINS. Это локальный API без HTTP-аутентификации, не публичный продакшен. Фронтенд делает другой участник; здесь он не реализован и не проверен.
+GET `/api/overview`, `/api/sales/monthly`, `/api/sellers?limit=10&offset=0`, `/api/categories`, `/api/customers/repeat`. Ответ `{"data": [...], "meta": {...}}`. Счётчики — числа; суммы, средние, рейтинги и проценты — точные десятичные строки; отсутствующее — null; даты — ISO. Проценты уже в шкале 0–100. CORS: localhost/127.0.0.1:5173 и :3000; иной origin через API_CORS_ORIGINS. Это локальный API без HTTP-аутентификации, не публичный продакшен. Фронтенд — `solution/frontend`, запуск в его README.
 
 ## Что понимать на защите
 

@@ -1,0 +1,72 @@
+:root {
+  --font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --c-text: #111;
+  --c-text-2: #555;
+  --c-muted: #888;
+  --c-faint: #aaa;
+  --c-caption: #8a9a7e;
+  --c-border: #ddd;
+  --c-border-strong: #bbb;
+  --c-line: #e9e9e9;
+  --c-bg: #fff;
+  --c-surface: #f3f3f3;
+  --c-bar: #888;
+  --c-bar-light: #c4c4c4;
+  --c-track: #ececec;
+  --c-ok: #4f7a4f;
+  --c-warn: #a35b1f;
+
+  --fs-xs: 11px;
+  --fs-sm: 12px;
+  --fs-md: 13px;
+  --fs-lg: 15px;
+  --fs-kpi: 34px;
+
+  --gap: 24px;
+  --page-pad: 32px;
+  --radius: 2px;
+
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font);
+  font-size: var(--fs-md);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button,
+select,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
