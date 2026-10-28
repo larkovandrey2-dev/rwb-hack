@@ -1,0 +1,10 @@
+Data source: Olist Brazilian E-Commerce Public Dataset
+https://github.com/olist/work-at-olist-data
+Data license: CC BY-NC-SA 4.0 (Attribution, NonCommercial, ShareAlike)
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+The source CSV files are not distributed in this repository.
+
+Original environment and loader scripts:
+https://github.com/daniilivanovp-droid/hackathon-students
+Source commit: 3da32d149bfa14dca3fdb0c5863d0771c38efbfc
+No additional license for third-party code is asserted here.

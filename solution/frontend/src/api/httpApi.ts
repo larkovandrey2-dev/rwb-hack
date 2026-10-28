@@ -1,7 +1,7 @@
-// Адаптер к бэку из solution/api (FastAPI). Бэк отдаёт { data, meta },
-// суммы и средние — десятичными строками, проценты — в шкале 0–100.
-// Здесь ответы приводятся к типам из types.ts; компоненты об этом не знают.
-// Фильтры бэк пока не принимает — все показатели за весь период.
+
+
+
+
 
 import categoryList from './mock/data/categories.json'
 import extraCategories from './mock/data/extra-categories.json'
@@ -44,7 +44,7 @@ interface SellerRow {
   revenue: Decimal
 }
 
-/** Код категории без товаров с известной категорией */
+
 const UNKNOWN_CATEGORY = 'UNKNOWN'
 const TOP_CATEGORIES = 10
 const TOP_SELLERS = 10
@@ -52,7 +52,7 @@ const TOP_SELLERS = 10
 const num = (v: Decimal) => (v === null ? 0 : Number(v))
 const round2 = (n: number) => Math.round(n * 100) / 100
 
-// Русские подписи категорий; для остальных — английское название из бэка
+
 const labels = new Map([...categoryList.items, ...extraCategories].map((c) => [c.code, c.label]))
 const categoryLabel = (row: CategoryRow) =>
   labels.get(row.category_name) ?? (row.category_english ?? row.category_name).replace(/_/g, ' ')
@@ -66,7 +66,7 @@ async function get<T>(path: string): Promise<T[]> {
 
 const getMonthly = async () =>
   (await get<MonthRow>('sales/monthly')).map((m) => ({
-    month: m.month.slice(0, 7), // «2016-09-01» → «2016-09»
+    month: m.month.slice(0, 7),
     orders: m.delivered_orders,
     revenue: num(m.revenue),
   }))
@@ -97,7 +97,7 @@ export const httpApi: ApiClient = {
   getSalesMonthly: getMonthly,
 
   getSalesCategories: async (): Promise<CategoriesResponse> => {
-    const rows = await get<CategoryRow>('categories') // уже по убыванию выручки
+    const rows = await get<CategoryRow>('categories')
     const known = rows.filter((r) => r.category_name !== UNKNOWN_CATEGORY)
     const unknown = rows.find((r) => r.category_name === UNKNOWN_CATEGORY)
     const rest = known.slice(TOP_CATEGORIES)
@@ -130,6 +130,6 @@ export const httpApi: ApiClient = {
       orders: s.delivered_orders,
       units: s.units,
       revenue: num(s.revenue),
-      handover_breach_share: null, // бэк пока не считает
+      handover_breach_share: null,
     })),
 }

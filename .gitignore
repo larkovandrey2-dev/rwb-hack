@@ -1,8 +1,6 @@
 research/
 hackathon-students/
 *.md
-!solution/README.md
-!solution/frontend/README.md
 .env
 .env.*
 !.env.example

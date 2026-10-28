@@ -20,10 +20,10 @@ interface ChartProps {
 }
 
 function MonthlyChart({ data, metric, title, formatAxis, formatValue }: ChartProps) {
-  // Ось Y: 4 деления с запасом 15% над максимумом, как в макете
+
   const top = Math.max(1, ...data.map((d) => d[metric])) * 1.15
   const yTicks = [0, top / 3, (top * 2) / 3, top]
-  // Подписи X: каждый третий месяц и последний
+
   const xTicks = data.map((d) => d.month).filter((_, i) => i % 3 === 0 || i === data.length - 1)
 
   return (
@@ -80,6 +80,6 @@ export function SalesDynamics({ params }: { params: ApiParams }) {
     </Block>
   )
 
-  // «N месяцев» — из числа строк ответа
+
   return <ChartCard title={t.title} meta={query.data && formatMonthsCount(query.data.length)} chart={chart} table={table} />
 }

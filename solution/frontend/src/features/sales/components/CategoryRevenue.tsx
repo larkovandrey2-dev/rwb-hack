@@ -46,7 +46,7 @@ export function CategoryRevenue({ params }: { params: ApiParams }) {
   const kpi = useSalesKpi(params)
   const isEmpty = (d: CategoriesResponse) => d.total === 0
 
-  // Сверка: сумма категорий из API должна совпасть с выручкой из KPI
+
   const total = query.data?.total
   const ok = total !== undefined && kpi.data !== undefined && Math.abs(total - kpi.data.revenue) < 0.005
   const footer =

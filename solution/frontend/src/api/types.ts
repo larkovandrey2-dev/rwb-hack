@@ -1,4 +1,4 @@
-// Контракт API. Доли — дробью 0..1, деньги — числом в BRL, месяцы — YYYY-MM.
+
 
 export interface ApiParams {
   from?: string
@@ -51,12 +51,12 @@ export interface TopSeller {
   orders: number
   units: number
   revenue: number
-  /** null — бэк не отдаёт показатель */
+
   handover_breach_share: number | null
 }
 
 export interface ApiClient {
-  /** Принимает ли бэк фильтры from / to / state / category */
+
   supportsFilters: boolean
   getFilters(): Promise<FiltersResponse>
   getSalesKpi(params: ApiParams): Promise<SalesKpi>

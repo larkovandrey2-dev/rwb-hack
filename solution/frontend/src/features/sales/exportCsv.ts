@@ -2,7 +2,7 @@ import type { QueryClient } from '@tanstack/react-query'
 import { api, type ApiParams } from '@/api'
 import { salesKeys } from './queries'
 
-/** CSV вкладки «Продажи» для текущих фильтров. «;» и BOM — чтобы Excel открыл без мастера. */
+
 export async function exportSalesCsv(client: QueryClient, p: ApiParams) {
   const [kpi, monthly, categories, sellers] = await Promise.all([
     client.ensureQueryData({ queryKey: salesKeys.kpi(p), queryFn: () => api.getSalesKpi(p) }),

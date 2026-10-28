@@ -16,14 +16,14 @@ function Layout() {
   const { pathname, search } = useLocation()
   const { params } = useFilters()
   const client = useQueryClient()
-  // CSV пока есть только у вкладки «Продажи»
+
   const onExport = pathname === '/sales' ? () => void exportSalesCsv(client, params) : undefined
 
   return (
     <div className={s.shell}>
       <header className={s.header}>
         <nav className={s.tabs}>
-          {/* search переносим, чтобы фильтры сохранялись при смене вкладки */}
+
           <NavLink to={{ pathname: '/sales', search }} className={({ isActive }) => (isActive ? s.tabActive : s.tab)}>
             {texts.nav.sales}
           </NavLink>

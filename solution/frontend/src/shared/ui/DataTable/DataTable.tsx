@@ -12,7 +12,7 @@ interface DataTableProps<T> {
   columns: Column<T>[]
   rows: T[]
   rowKey: (row: T) => string
-  /** Компактная таблица без серой шапки — для режима «Таблица» в карточках */
+
   compact?: boolean
 }
 

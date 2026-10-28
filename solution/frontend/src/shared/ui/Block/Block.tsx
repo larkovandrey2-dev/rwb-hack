@@ -6,12 +6,12 @@ import s from './Block.module.css'
 interface BlockProps<T> {
   query: UseQueryResult<T>
   isEmpty?: (data: T) => boolean
-  /** Число строк скелетона */
+
   rows?: number
   children: (data: T) => ReactNode
 }
 
-/** Состояния блока: загрузка, ошибка с «Повторить», пусто */
+
 export function Block<T>({ query, isEmpty, rows = 6, children }: BlockProps<T>) {
   if (query.isPending) {
     return (

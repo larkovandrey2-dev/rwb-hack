@@ -1,5 +1,5 @@
-// Заглушки API. Базовые цифры — из дизайна. На фильтры реагируют просто:
-// числа масштабируются долей выбранного периода, штата и категории.
+
+
 
 import type { ApiClient, ApiParams, CategoriesResponse } from '../types'
 import categories from './data/categories.json'
@@ -49,7 +49,7 @@ function buildCategories(p: ApiParams): CategoriesResponse {
     return { ...c, revenue, share: share(revenue) }
   })
   const uncategorized = round2(categories.uncategorized.revenue * f)
-  // «Прочие» — остаток, чтобы сумма сходилась с total до копейки
+
   const other = round2(total - uncategorized - items.reduce((sum, c) => sum + c.revenue, 0))
   return {
     total,

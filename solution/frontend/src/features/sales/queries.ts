@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { api, type ApiParams } from '@/api'
 
-// Ключи общие для блоков и выгрузки CSV
+
 export const salesKeys = {
   kpi: (p: ApiParams) => ['sales', 'kpi', p],
   monthly: (p: ApiParams) => ['sales', 'monthly', p],

@@ -7,7 +7,7 @@ import s from './FilterBar.module.css'
 
 const t = texts.filters
 
-/** Фильтры применяются по кнопке и сохраняются в URL */
+
 export function FilterBar({ onExport }: { onExport?: () => void }) {
   const { filters, apply, reset } = useFilters()
   const [draft, setDraft] = useState<Filters>(filters)
@@ -16,7 +16,7 @@ export function FilterBar({ onExport }: { onExport?: () => void }) {
   const off = !api.supportsFilters
 
   const key = JSON.stringify(filters)
-  // Подтягиваем черновик, если фильтры сменились через URL или «Сбросить»
+
   useEffect(() => setDraft(filters), [key]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const set = (patch: Partial<Filters>) => setDraft({ ...draft, ...patch })

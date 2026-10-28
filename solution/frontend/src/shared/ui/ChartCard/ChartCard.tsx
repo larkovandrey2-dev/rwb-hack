@@ -6,7 +6,7 @@ interface ChartCardProps {
   title: string
   subtitle?: string
   meta?: ReactNode
-  /** Если заданы chart и table — внизу появляется переключатель «График / Таблица» */
+
   chart?: ReactNode
   table?: ReactNode
   children?: ReactNode

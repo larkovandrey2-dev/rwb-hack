@@ -12,7 +12,7 @@ export const DEFAULT_FILTERS: Filters = { from: '2016-09', to: '2018-08', state:
 
 const KEYS = ['from', 'to', 'state', 'category'] as const
 
-/** Применённые фильтры хранятся в query-параметрах URL */
+
 export function useFilters() {
   const [search, setSearch] = useSearchParams()
 
